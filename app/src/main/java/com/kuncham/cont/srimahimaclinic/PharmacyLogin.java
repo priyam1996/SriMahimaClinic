@@ -27,7 +27,7 @@ public class PharmacyLogin extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                Intent it=new Intent(PharmacyLogin.this,PharmacyLogin.class);
+                Intent it=new Intent(PharmacyLogin.this,Pharmacydata.class);
                     startActivity(it);
 
             }
