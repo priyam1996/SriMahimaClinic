@@ -97,6 +97,9 @@
                 android:value=".DoctorsLogin" />
         </activity>
 
+        <activity android:name=".Pharmacydata">
+
+        </activity>
 
     </application>
 
