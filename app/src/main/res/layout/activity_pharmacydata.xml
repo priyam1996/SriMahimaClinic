@@ -6,31 +6,57 @@
     android:layout_height="match_parent"
     tools:context="com.kuncham.cont.srimahimaclinic.Pharmacydata">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_register"
+        android:layout_marginLeft="5dp"
+        android:text="Register number :"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/number"
         android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_register"
         android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:hint="registation number"/>
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_date"
+        android:text="Date:"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/number"/>
+
+
     <EditText
+        android:id="@+id/ed_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/date"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/tv_date"
         android:layout_below="@id/number"
-        android:hint="registration date"/>
+        android:hint="Select Date..."
+
+        android:padding="15dp"
+        />
 
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/date"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp"
+
+        android:layout_alignLeft="@+id/number"
+        android:layout_alignStart="@+id/number"
+        android:layout_below="@+id/tv_date"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="87dp"
         android:gravity="center"
         android:onClick="submit"
         android:text="submit" />
