@@ -4,17 +4,15 @@ import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import java.util.Calendar;
 
 public class PreliminaryData extends AppCompatActivity {
 
     DatePicker simpleDatePicker;
-    Button submit;
+
 
     EditText date;
     DatePickerDialog datePickerDialog;
@@ -24,22 +22,6 @@ public class PreliminaryData extends AppCompatActivity {
         setContentView(R.layout.activity_preliminary_data);
 
         simpleDatePicker = (DatePicker) findViewById(R.id.datepicker);
-        submit = (Button) findViewById(R.id.submitButton);
-
-
-        submit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // get the values for day of month , month and year from a date picker
-                String day = "Day = " + simpleDatePicker.getDayOfMonth();
-                String month = "Month = " + (simpleDatePicker.getMonth() + 1);
-                String year = "Year = " + simpleDatePicker.getYear();
-                // display the values by using a toast
-                Toast.makeText(getApplicationContext(), day + "\n" + month + "\n" + year, Toast.LENGTH_LONG).show();
-            }
-        });
-
-
 
         date = (EditText) findViewById(R.id.ed_date);
         // perform click event on edit text
