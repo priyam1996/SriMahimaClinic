@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="PRELIMINARY DATA"
-        android:padding="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="60dp"
@@ -24,20 +25,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/bt_front"
-        android:text="DOCTORS DATA"
-        android:padding="5dp"
+        android:text="DOCTOR'S LOGIN"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:background="#45D874"
         android:layout_margin="20dp"
         />
+
     <Button
         android:id="@+id/bt_pharmacy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/bt_doctors"
-        android:text="PHARMACY DATA"
-        android:padding="5dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="#45D874"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="PHARMACY DATA"
         />
 </RelativeLayout>
