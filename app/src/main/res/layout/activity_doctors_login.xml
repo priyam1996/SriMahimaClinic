@@ -15,8 +15,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/border"
-        android:inputType="textEmailAddress"
-        android:layout_below="@id/login_image"/>
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/login_passwd"
