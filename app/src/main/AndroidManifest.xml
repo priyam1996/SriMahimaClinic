@@ -21,19 +21,83 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:label="Logins">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".PreliminaryLogin" />
-        <activity android:name=".DoctorsLogin" />
-        <activity android:name=".PharmacyLogin" />
-        <activity android:name=".PreliminaryData" />
-        <activity android:name=".PreliminaryAccount" />
-        <activity android:name=".ForgetPassword"></activity>
+
+        <activity android:name=".PreliminaryLogin"
+            android:label="Preliminary Login"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".DoctorsLogin"
+            android:label="Docter's Login"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".PharmacyLogin"
+            android:label="Pharmacy Login"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+
+        <activity android:name=".PreliminaryData"
+            android:label="Preliminary Data"
+            android:parentActivityName=".PreliminaryLogin">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PreliminaryLogin" />
+        </activity>
+
+        <activity android:name=".PreliminaryAccount"
+            android:label="Preliminary Account"
+            android:parentActivityName=".PreliminaryLogin">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PreliminaryLogin" />
+        </activity>
+
+        <activity android:name=".ForgetPassword"
+            android:label="Forget Password"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoctorsLogin" />
+        </activity>
+
+        <activity
+            android:name=".DoctersData"
+            android:label="@string/title_activity_docters_data"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".DoctorsLogin">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoctorsLogin" />
+        </activity>
+
+        <activity android:name=".DoctersAccount"
+            android:label="Docters Create Account"
+            android:parentActivityName=".DoctorsLogin">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoctorsLogin" />
+        </activity>
+
+
     </application>
 
 </manifest>
