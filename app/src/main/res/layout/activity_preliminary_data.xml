@@ -178,5 +178,16 @@
         android:hint="Select Date..."
         android:padding="15dp"
         />
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_date"
+        android:text="SUBMIT"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:background="#33f"/>
 
 </RelativeLayout>
