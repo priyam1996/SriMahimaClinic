@@ -44,12 +44,11 @@
         android:id="@+id/bt_create"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:text="CREATE ACCOUNT"
-        android:layout_below="@id/ed_mb"
+        android:layout_alignLeft="@+id/ed_email1"
+        android:layout_alignStart="@+id/ed_email1"
+        android:layout_alignTop="@+id/ed_email1"
         android:background="#33f"
-        android:layout_margin="20dp"/>
+        android:text="CREATE ACCOUNT" />
 
 
 </RelativeLayout>
