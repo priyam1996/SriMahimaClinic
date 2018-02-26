@@ -97,7 +97,12 @@
                 android:value=".DoctorsLogin" />
         </activity>
 
-        <activity android:name=".Pharmacydata">
+        <activity android:name=".Pharmacydata"
+            android:label="Pharmacy Data"
+            android:parentActivityName=".PharmacyLogin">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PharmacyLogin" />
 
         </activity>
 
