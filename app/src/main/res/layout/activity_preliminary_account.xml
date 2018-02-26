@@ -1,9 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.kuncham.cont.srimahimaclinic.PreliminaryAccount">
 
-</android.support.constraint.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/ed_email1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Email Address"
+        android:layout_margin="20dp"
+       />
+    <EditText
+        android:id="@+id/ed_pw1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_email1"
+        android:hint="Enter Password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:id="@+id/ed_fn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:layout_below="@id/ed_pw1"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/ed_mb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_fn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Mobile" />
+
+
+    <Button
+        android:id="@+id/bt_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="CREATE ACCOUNT"
+        android:layout_below="@id/ed_mb"
+        android:background="#33f"
+        android:layout_margin="20dp"/>
+
+
+</RelativeLayout>
