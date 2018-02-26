@@ -30,7 +30,10 @@
         </activity>
         <activity android:name=".PreliminaryLogin" />
         <activity android:name=".DoctorsLogin" />
-        <activity android:name=".PharmacyLogin"></activity>
+        <activity android:name=".PharmacyLogin" />
+        <activity android:name=".PreliminaryData" />
+        <activity android:name=".PreliminaryAccount" />
+        <activity android:name=".ForgetPassword"></activity>
     </application>
 
 </manifest>
